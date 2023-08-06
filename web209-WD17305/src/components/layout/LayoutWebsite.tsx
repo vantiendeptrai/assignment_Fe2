@@ -1,16 +1,24 @@
-import React from 'react'
-import { Outlet } from 'react-router-dom'
+import React from "react";
+import { Outlet } from "react-router-dom";
 
-type Props = {}
+type Props = {};
 
 const LayoutWebsite = (props: Props) => {
-    return (
-        <div>
-            LayoutWebsite
-            <Outlet />
+  return (
+    <div>
+      <header>
+        <img src="" alt="" />
 
-        </div>
-    )
-}
+        <input type="text" />
 
-export default LayoutWebsite
+        <span>
+          <h1>chào bạn</h1>
+          <h2>nam</h2>
+        </span>
+      </header>
+      <Outlet />
+    </div>
+  );
+};
+
+export default LayoutWebsite;
