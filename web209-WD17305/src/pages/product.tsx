@@ -20,7 +20,7 @@ const ProductDetailPage = () => {
       <h2>{product!.name}</h2>
       <p>{product!.description}</p>
       <img src={product!.image} alt="" />
-      {/* Other product details */}
+      <p>{product!.description}</p>
     </div>
   );
 };
