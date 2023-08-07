@@ -10,6 +10,7 @@ import SignIn from "./pages/auth/Signin";
 import CustomCard from "./pages/Card";
 
 import AdminProductEdit from "./pages/admin/product/edit";
+import ProductDetailPage from "./pages/product";
 
 export const router = createBrowserRouter([
   // Định nghĩa router cho website
@@ -22,6 +23,10 @@ export const router = createBrowserRouter([
       {
         path: "/home",
         element: <CustomCard />,
+      },
+      {
+        path: "/products/:id",
+        element: <ProductDetailPage />,
       },
       {
         path: "signin",

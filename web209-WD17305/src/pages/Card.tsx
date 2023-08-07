@@ -2,6 +2,7 @@ import { Row, Col, Card as AntCard } from "antd";
 import React, { useEffect } from "react";
 import { useGetProductsQuery } from "@/api/product";
 import { IProduct } from "@/interface/product";
+import { Link } from "react-router-dom";
 
 const CustomCard = () => {
   const { data: products = [], isLoading, isError } = useGetProductsQuery();
@@ -28,6 +29,7 @@ const CustomCard = () => {
             />
 
             <AntCard.Meta title={product.price} description={product.price} />
+            <Link to={`/products/${product.id}`}>View Details</Link>
           </AntCard>
         </div>
       ))}
