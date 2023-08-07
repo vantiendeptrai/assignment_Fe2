@@ -6,6 +6,7 @@ import AdminProduct from "./pages/admin/product";
 import AdminAdd from "./pages/admin/product/add";
 import { Children } from "react";
 import SignIn from "./pages/auth/Signin";
+import CustomCard from "./pages/Card";
 
 export const router = createBrowserRouter([
   // Định nghĩa router cho website
@@ -14,7 +15,11 @@ export const router = createBrowserRouter([
     element: <LayoutWebsite />,
 
     children: [
-      { index: true, element: <Navigate to="/" /> },
+      { index: true, element: <Navigate to="/home" /> },
+      {
+        path: "/home",
+        element: <CustomCard />,
+      },
       {
         path: "signin",
         element: <SignIn />,
