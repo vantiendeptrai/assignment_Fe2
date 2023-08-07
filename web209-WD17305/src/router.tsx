@@ -6,12 +6,10 @@ import AdminProduct from "./pages/admin/product";
 import AdminAdd from "./pages/admin/product/add";
 import { Children } from "react";
 import SignIn from "./pages/auth/Signin";
-<<<<<<< Updated upstream
-import CustomCard from "./pages/Card";
-=======
-import AdminProductEdit from "./pages/admin/product/edit";
 
->>>>>>> Stashed changes
+import CustomCard from "./pages/Card";
+
+import AdminProductEdit from "./pages/admin/product/edit";
 
 export const router = createBrowserRouter([
   // Định nghĩa router cho website
@@ -51,11 +49,9 @@ export const router = createBrowserRouter([
       },
       {
         path: "product/:idProduct/edit",
-        element: <AdminProductEdit />
+        element: <AdminProductEdit />,
       },
     ],
   },
-  { path: "cart", element: "cart" }
-
-
+  { path: "cart", element: "cart" },
 ]);
