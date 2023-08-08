@@ -4,7 +4,6 @@ import LayoutAdmin from "./components/layout/LayoutAdmin";
 import Dashboard from "./pages/dashboard";
 import AdminProduct from "./pages/admin/product";
 import AdminAdd from "./pages/admin/product/add";
-<<<<<<< Updated upstream
 import { Children } from "react";
 import SignIn from "./pages/auth/Signin";
 
@@ -13,12 +12,6 @@ import CustomCard from "./pages/Card";
 import AdminProductEdit from "./pages/admin/product/edit";
 import ProductDetailPage from "./pages/product";
 import SignUp from "./pages/auth/Signup";
-=======
-import CustomCard from "./pages/Card";
-import AdminProductEdit from "./pages/admin/product/edit";
-
-
->>>>>>> Stashed changes
 
 export const router = createBrowserRouter([
   // Định nghĩa router cho website
