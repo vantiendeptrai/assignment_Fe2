@@ -18,16 +18,22 @@ const Header = () => {
 
       <span className="flex gap-2 items-center">
         <Space direction="vertical" size={16}>
-          <Space wrap size={16}>
-            <Avatar size="large" icon={<AiOutlineUser />} className="p-[6px]" />
-          </Space>
+          <Link to="signin">
+            <Space wrap size={16}>
+              <Avatar
+                size="large"
+                icon={<AiOutlineUser />}
+                className="p-[6px]"
+              />
+            </Space>
+          </Link>
         </Space>
         {type ? (
           <h1 className="flex">
             chào bạn<h2>nam</h2>
           </h1>
         ) : (
-          <a href=""></a>
+          <Link to="signup">đăng ký</Link>
         )}
       </span>
     </header>
