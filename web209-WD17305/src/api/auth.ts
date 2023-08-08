@@ -23,6 +23,7 @@ const authApi = createApi({
   }),
 });
 
-export const { useRegisterMutation, useLoginMutation } = authApi;
+// export const { useRegisterMutation, useLoginMutation } = authApi;
+export const useRegisterMutation = authApi.endpoints.register.useMutation;
 export const authReducer = authApi.reducer;
 export default authApi;

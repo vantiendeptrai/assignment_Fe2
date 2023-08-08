@@ -2,12 +2,6 @@ import React from "react";
 import { Button, Checkbox, Form, Input, message } from "antd";
 import { useRegisterMutation } from "@/api/auth";
 
-interface RegisterResponse {
-  data: {
-    token: string;
-  };
-}
-
 const SignUp: React.FC = () => {
   const [register, { isLoading }] = useRegisterMutation();
 
@@ -17,12 +11,14 @@ const SignUp: React.FC = () => {
 
       const response = await register({ username, password });
       console.log(response);
-      if (response.data?.token) {
-        // Handle successful registration here
-        message.success("Registration successful!");
-      } else {
-        // Handle registration failure here
-        message.error("Registration failed. Please try again later.");
+      if ("data" in response) {
+        if (response.data?.token) {
+          // Handle successful registration here
+          message.success("Registration successful!");
+        } else {
+          // Handle registration failure here
+          message.error("Registration failed. Please try again later.");
+        }
       }
     } catch (error) {
       console.error("Registration failed:", error);
@@ -54,9 +50,9 @@ const SignUp: React.FC = () => {
       </Form.Item>
 
       <Form.Item
-        label="email"
+        label="Email"
         name="email"
-        rules={[{ required: true, message: "Please input your username!" }]}
+        rules={[{ required: true, message: "Please input your email!" }]}
       >
         <Input />
       </Form.Item>

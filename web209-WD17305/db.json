@@ -57,6 +57,13 @@
     }
   ],
   "users": [
-    {}
+    {
+      "email": "nam@gmail.com",
+      "password": "$2a$10$cYusAPNftKAGl9xnVqbt9eTFo4Dm6WF6isCGqB7FowWQy615E/jza",
+      "firstName": "nam",
+      "lastName": "nam",
+      "confirmPassword": "nam123",
+      "id": 1
+    }
   ]
 }
