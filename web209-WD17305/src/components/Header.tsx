@@ -7,7 +7,7 @@ import React from "react";
 const Header = () => {
   const type = false;
   return (
-    <header className="grid grid-cols-3 bg-red-500 py-4 justify-between ">
+    <header className="grid grid-cols-3 bg-gray-700	 py-4 justify-between ">
       <img src="" alt="" />
 
       <input

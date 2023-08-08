@@ -11,7 +11,7 @@ import CustomCard from "./pages/Card";
 
 import AdminProductEdit from "./pages/admin/product/edit";
 import ProductDetailPage from "./pages/product";
-import SignUp from "./pages/auth/SignUp";
+import SignUp from "./pages/auth/Signup";
 
 export const router = createBrowserRouter([
   // Định nghĩa router cho website

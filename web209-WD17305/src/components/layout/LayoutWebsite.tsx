@@ -11,7 +11,8 @@ const LayoutWebsite = (props: Props) => {
     <div>
       <Header />
 
-      <Outlet />
+        <Outlet />
+ 
 
       <Footer />
     </div>
