@@ -92,3 +92,5 @@ const AdminProductAdd = () => {
     </>
   );
 };
+
+export default AdminProductAdd;
